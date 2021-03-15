@@ -1,0 +1,58 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXTml</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- fonte de icones -->
+    <script src="https://kit.fontawesome.com/ef3bb26aae.js" crossorigin="anonymous"></script>
+    <!-- fonte de texto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- slider -->
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min-min.js"></script>
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel-min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default-min.css">
+    <!-- css do projeto -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <section id="cap">
+                <header>
+                    <div class="left">
+                        <i class="far fa-circle norender"></i>
+                    </div>
+                    <div class="center">
+                        <img src="img/logo.svg" alt="logo do app">
+                    </div>
+                    <div class="right">
+                        <i class="far fa-arrow-right"></i>
+                    </div>
+                </header>
+            </section>
+            
+            <div class="spaceholder">
+            </div>
+    <section class="content">
+        <div class="explainer-template">
+            <div class="text">
+                <h1>Cadastro em aprovação</h1>
+                <p>Estamos validando os dados enviados por você. Isso pode levar alguns minutinhos. <br> Te avisaremos quando terminarmos</p>
+            </div>
+            <div class="image">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <!-- <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_44x5Wm.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player> -->
+                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_wpasnbir.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.right').click(function () {
+            window.location = 'http://brunos-macbook-air.local:5757/cadastro-aprovado.html';
+            return false;
+        })
+    </script>
+</body>
+</html>

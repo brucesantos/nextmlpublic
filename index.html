@@ -1,0 +1,99 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXTml</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- fonte de icones -->
+    <script src="https://kit.fontawesome.com/ef3bb26aae.js" crossorigin="anonymous"></script>
+    <!-- fonte de texto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- slider -->
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min-min.js"></script>
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel-min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default-min.css">
+    <!-- css do projeto -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <section id="cap">
+                <header>
+                    <div class="left">
+                        <i class="far fa-circle norender"></i>
+                    </div>
+                    <div class="center">
+                        <img src="img/logo.svg" alt="logo do app">
+                    </div>
+                    <div class="right">
+                        <i class="far fa-circle norender"></i>
+                    </div>
+                </header>
+            </section>
+            
+            <div class="spaceholder">
+            </div>
+    <section class="content">
+      <div class="owl-carousel owl-theme">
+          <div class="explainer-template">
+              <div class="text">
+                  <h1>O que é?</h1>
+                  <p>Sua geladeira compartilhada com bebidas geladinhas disponíveis quando você quiser!</p>
+              </div>
+              <div class="image">
+                  <i class="fal fa-refrigerator"></i>
+              </div>
+          </div>
+          <div class="explainer-template">
+              <div class="text">
+                  <h1>Qual é a mágica?</h1>
+                  <p>Uma câmera inteligente vai saber quais produtos você pegou e depois cobrá-los no seu cartão cadastrado no app.</p>
+              </div>
+              <div class="image">
+                  <i class="fal fa-cctv"></i>
+              </div>
+          </div>
+          <div class="explainer-template">
+              <div class="text">
+                  <h1>Como funciona?</h1>
+                  <p>Basta escanear o código da geladeria, abrir a porta, escolher os produtos e fechar!</p>
+              </div>
+              <div class="image">
+                  <i class="fal fa-shopping-basket"></i>
+              </div>
+          </div>
+      </div>
+      
+      <!-- page scripts -->
+          <script>
+              var owl = $('.owl-carousel');
+              $(document).ready(function(){
+                  owl.owlCarousel({
+                      items:1,
+                      loop:true,
+                      margin:0,
+                      autoplay:true,
+                      autoplayTimeout:5000
+                  });
+              });
+              owl.on('changed.owl.carousel', function(e) {
+                  owl.trigger('stop.owl.autoplay');
+                  owl.trigger('play.owl.autoplay');
+              }); //restarts timer on slide change even when the change is manual
+      
+          </script>
+      </body>
+      
+    </section>
+    <section class="actionables">
+        <div>
+            <a class="btn" href="loading.html">fazer o meu cadastro</a>
+        </div>
+        <div>
+            <a class="btn secondary" href="">já tenho uma conta</a>
+        </div>
+    </section>
+</body>
+</html>
